@@ -1,0 +1,62 @@
+RTutorial-day1  批处理跑批
+1创建一个csv格式的文件叫input.csv，其中内容为一个表格数据
+
+2创建一个R文件叫run.r,其中的内容为：
+data<-read.csv("input.csv")
+print(data)
+print("sal <- max(data$salary)")
+s
+sal <- max(data$salary)
+p
+print(sal)
+p
+print("----------------------------")
+
+
+
+p
+print("retval <- subset(data, salary == max(salary))")
+r
+retval <- subset(data, salary == max(salary))
+p
+print(retval)
+p
+print("----------------------------")
+
+
+
+p
+print("retval <- subset( data, dept == 'IT')")
+r
+retval <- subset( data, dept == 'IT')
+p
+print(retval)
+p
+print("----------------------------")
+
+
+
+p
+print("info <- subset(data, salary > 600 & dept == 'IT')")
+i
+info <- subset(data, salary > 600 & dept == 'IT')
+p
+print(info)
+p
+print("----------------------------")
+
+
+
+p
+
+print("retval <- subset(data, as.Date(start_date) > as.Date('2014-01-01'))")
+r
+retval <- subset(data, as.Date(start_date) > as.Date('2014-01-01'))
+p
+print(retval)
+p
+print("----------------------------")
+3创建一个批处理文件bat叫run.bat,用notepad++打开，其中内容为：
+Rscript run.r
+pause
+4双击运行run.bat就可以运行 run.r的内容了
