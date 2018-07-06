@@ -1,0 +1,57 @@
+RTutorial-day3 保存json文件
+
+1创建一个文件run.r的文件，内容为：
+library(rjson)
+#
+
+
+getDataPath <- function(path){
+ 
+    return <- paste("data", path, sep = "/")
+}
+}
+
+
+
+
+writeJsonFile <- function(data，path){
+ 
+    cat(toJSON(data), file = getDataPath(path))
+}
+}
+
+
+
+#
+# 创建一个队列数据
+
+doc = c(0,1,2,3)
+
+
+
+#
+# 创建一个数据框
+e
+emp.data <- data.frame(
+ 
+    emp_id = c (1:5), 
+ 
+    emp_name = c("Rick","Dan","Michelle","Ryan","Gary"),
+ 
+    salary = c(623.3,515.2,611.0,729.0,843.25), 
+ 
+    start_date = as.Date(c("2012-01-01", "2013-09-23", "2014-11-15", "2014-05-11",
+ 
+    "2015-03-27")),
+ 
+    stringsAsFactors = FALSE
+)
+)
+
+
+
+writeJsonFile(doc，"cache1.txt")
+writeJsonFile(emp.data，"cache2.txt")
+2创建一个run.bat,其中内容为：
+Rscript run.r
+pause

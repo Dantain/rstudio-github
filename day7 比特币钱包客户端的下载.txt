@@ -1,0 +1,7 @@
+RTutorial-day7 比特币钱包客户端的下载
+ 比特币钱包客户端的下载链接：
+https://wallet.bitcoin.com/
+https://bitcoin.org/en/choose-your-wallet
+比特币的价格不稳定，应该把比特币当做是一种高风险的投资品种
+比特币的付款不可逆，发出的比特币转账都无法撤消返还
+比特币是非匿名的

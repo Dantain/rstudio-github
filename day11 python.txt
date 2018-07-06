@@ -1,0 +1,81 @@
+RTutorial-day11 python
+1/day8重复做一遍
+2/用记事本打开index.py
+修改成如下：
+#! python3
+#
+#encoding: utf-8
+#
+# -*- coding: utf-8 -*-
+
+
+
+i
+if __name__ == '__main__':
+ 
+    print("Can i help you ? you can choose the number:")
+
+
+
+    print("1. get futures data")
+ 
+    print("2. get stock data")
+ 
+    print("3. get gold data")
+ 
+    print("4. get oil data")
+ 
+    print("5. get Forex data")
+
+
+
+    dosomethink = input("")
+
+
+    if dosomethink == "1":
+ 
+        print('getting futures data on web ...')
+ 
+    elif dosomethink == "2":
+ 
+        print('getting stock data on web ...')
+ 
+    elif dosomethink == "3":
+ 
+        print('getting gold data on web ...')
+ 
+    elif dosomethink == "4":
+ 
+        print('getting oil data on web ...')
+ 
+    else:
+ 
+        print('getting Forex data on web ...')
+
+    dosomethink = input("")
+
+
+
+    if dosomethink == "1":
+ 
+        print('getting futures data on web ...')
+ #获取期货数据
+    elif dosomethink == "2":
+ 
+        print('getting stock data on web ...')
+ 
+    elif dosomethink == "3":
+ 
+        print('getting gold data on web ...')
+ 
+    elif dosomethink == "4":
+ 
+        print('getting oil data on web ...')
+ 
+    else:
+ 
+        print('getting Forex data on web ...')#获取外汇数据
+
+dosomethink = input("")的意思是电脑键盘输入数据，会输出所需数据提示结果。
+
+3/在git命令框里输入python index.py 执行

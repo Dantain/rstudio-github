@@ -1,0 +1,9 @@
+RTutorial-day6  建行情交易数据库，看不懂
+1/创建一个run.bat 其中内容为：
+:q
+python index.py
+pause
+goto q
+2/创建一个mysqlinit.sql
+3/创建一个index.py
+4/文件夹lib

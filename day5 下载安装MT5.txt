@@ -1,0 +1,54 @@
+RTutorial-day5 下载安装MT5
+1/下载mate trder5的地址： https://www.metatrader5.com/
+MT5 ：是一款外汇、期货等金融产品的交易软件，提供各种投资产品的实时行情和交易，还提供4种缩放模式、19种画线工具、21个交易时段图表选项、38种国际流行的技术指标和39种图像对象
+2/安装好mate trder5
+3/菜单有两个关键的工具：
+显示 -> 交易品种
+用来查看交易行情图表，黄色为打开，灰色为关闭
+工具 -> MetaQuotes语言编辑器->帮助->MQL5帮助文件
+此编程语言可以编写相应的脚本来进行简单交易，过编写DLL工具接入R/python/c/c++/nodejs/mysql来进行自动化交易系统的搭建
+6/创建一个run.r的文件，其中内容为：
+library(rjson)
+
+# 创建一个生成文件实际路径的函数
+getDataPath <- function(path){
+	return <- paste("data", path, sep = "/")
+}
+
+# 创建一个读取文件的函数
+readJsonFile <- function(path){
+	return <- fromJSON(file = getDataPath(path))
+}
+
+countf<-function(item1,item2){
+     count1 = 1
+     for(x in item1){
+	      count1 = count1*get(x)
+	    }
+     count2 = 1
+     for(x in item2){
+	      count2 = count2*get(x)
+	    }
+    print(count1/count2)
+	}
+
+# 网上查找下面代码 assign函数的功能
+assign("a",2)
+assign("b",3)
+assign("c",5)
+assign("d",7)
+assign("e",11)
+assign("f",13)
+assign("g",17)
+assign("h",19)
+assign("i",23)
+assign("j",29)
+assign("k",31)
+assign("l",37)
+jsondata = readJsonFile("data.json")
+countf(jsondata$data1,jsondata$data2)
+
+# 请确认 print(count1/count2) 代表什么意思。
+7/创建一个run.bat,其中内容为：
+Rscript run.r
+pause
